@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">Twitter</h1>
+    </header>
+    <main>
+        <form method="POST" id="form" class="form">
+            <label for="username">Username</label>
+            <input class="u-full-width" type="text" name="username" id="username" value="Enter Username">
+            <label for="content">Content</label>
+            <textarea class="u-full-width" type="text" name="content" id="content">Type Content Here</textarea>
+            <button class="button-primary" id="submit-btn" type="submit" form="form">Tweet</button>
+        </form>
+        
+        <div class="loading">
+            <img src="images/loading.gif" alt="">
+        </div>
+    </main>
+
+
+    <script src="scripts/form.js"></script>
+    <script src="scripts/script.js"></script>
+</body> 
+</html>
