@@ -21,9 +21,11 @@ app.use(cors());
 //Parse JSON File
 app.use(express.json());
 
-
-app.get('/', (req, res) => {
-
+//Query Database
+app.get('/tweet', (req, res) => {
+    tweets.find().then((tweets) => {
+        res.json(tweets);
+    });
 });
 
 
@@ -31,7 +33,7 @@ function validTweet(tweet){
     return (tweet.username && tweet.username.toString().trim() !== '' && tweet.content && tweet.content.toString().trim());
 }
 
-
+//Add Tweet on Database
 app.post('/tweet', (req, res) => {
     if(validTweet(req.body)){   //IMPORTANT SECURITY STEP, ALWAYS CHECK USER REQUEST BEFORE ENTERING ON DATABASE
         //Insert On DB
@@ -43,7 +45,6 @@ app.post('/tweet', (req, res) => {
 
         //Add Tweet on DB
         tweets.insert(tweet).then((createdTweet) => {
-            
             res.json(createdTweet);
         });
 

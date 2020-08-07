@@ -9,7 +9,7 @@
 }
 
 .form, .loading {
-    width: 30vw;
+    width: 60vw;
     margin: 0 auto;
 }
 
@@ -17,4 +17,15 @@
     text-align: center;
 }
 
+.tweets {
+    width: 60vw;
+    margin: 0 auto;
+}
 
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .form, .loading {
+        width: 90vw;
+        margin: 0 auto;
+    }
+}
