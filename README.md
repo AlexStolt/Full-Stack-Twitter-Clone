@@ -1,6 +1,6 @@
 # Full-Stack-Twitter-Clone
 ## Download Project
-```git clone git clone https://github.com/AlexStolt/Full-Stack-Twitter-Clone.git```
+```git clone https://github.com/AlexStolt/Full-Stack-Twitter-Clone.git```
 
 ## Requirements
 ### Live-Server (Static File Server)
