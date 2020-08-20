@@ -22,3 +22,18 @@
 
 ### As A User
 ```npm start```
+
+## Tech / Frameworks
+### Front-End
+#### CSS
+* Vanilla CSS
+* Skeleton (Framework)
+#### Javascript
+* Vanilla JS with AJAX (fetch())
+### Back-End
+#### Server
+* Node.js
+#### Database
+* MongoDB with Monk
+#### Middleware
+* Express.js
