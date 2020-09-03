@@ -12,7 +12,7 @@
 
 ## Run Clone Locally
 ### Front-End (Static File Server)
-```cd Full-Stack-Twitter-Clone/client/```
+```cd Twitter.js/client/```
 ```live-server```
 ### Back-End
 ```cd Full-Stack-Twitter-Clone/server/```
